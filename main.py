@@ -22,28 +22,52 @@ class Calculator (QMainWindow):
         self.ui.btn_delete.clicked.connect(self.persent)
 
     def Persent_Num(self):
-        self.ui.textEdit.setText("")
+        try:
+            pass
+        except:
+            self.ui.textEdit.setText("Not valid")
 
     def Sum_num(self):
-        pass
+        try:
+            pass
+        except:
+            self.ui.textEdit.setText("Not valid")
 
     def Sub_num(self):
-        pass
+        try:
+            pass
+        except:
+            self.ui.textEdit.setText("Not valid")
 
     def Mul_num(self):
-        pass
+        try:
+            pass
+        except:
+            self.ui.textEdit.setText("Not valid")
 
     def Power_num(self):
-        pass
+        try:
+            pass
+        except:
+            self.ui.textEdit.setText("Not valid")
 
     def Jazr_num(self):
-        pass
+        try:
+            pass
+        except:
+            self.ui.textEdit.setText("Not valid")
 
     def Delete_num(self):
-        pass
+        try:
+            pass
+        except:
+            self.ui.textEdit.setText("Not valid")
 
-    def Celere_num(self):
-        pass
+    def Clear_num(self):
+        try:
+            pass
+        except:
+            self.ui.textEdit.setText("Not valid")
 
 
 if __name__ == "__main__":
