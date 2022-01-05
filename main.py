@@ -15,11 +15,15 @@ class Calculator (QMainWindow):
         self.ui.btn_persent.clicked.connect(self.Persent_Num)
         self.ui.btn_sum.clicked.connect(self.Sum_num)
         self.ui.btn_sub.clicked.connect(self.Sub_num)
-        self.ui.btn_mul.clicked.connect(self.persent)
-        self.ui.btn_pow.clicked.connect(self.persent)
+        self.ui.btn_mul.clicked.connect(self.Mul_num)
+        self.ui.btn_pow.clicked.connect(self.Power_num)
         self.ui.btn_equal.clicked.connect(self.persent)
-        self.ui.btn_jazr.clicked.connect(self.persent)
-        self.ui.btn_delete.clicked.connect(self.persent)
+        self.ui.btn_jazr.clicked.connect(self.Jazr_num)
+        self.ui.btn_delete.clicked.connect(self.Delete_num)
+        self.ui.btn_ce.clicked.connect(self.Clear_num)
+        self.ui.btn_ce.clicked.connect(self.Clear_num)
+        self.ui.btn_dot.clicked.connect(self.Dot_num)
+        self.ui.btn_negPos.clicked.connect(self.Negpos_num)
 
     def Persent_Num(self):
         try:
@@ -68,6 +72,12 @@ class Calculator (QMainWindow):
             pass
         except:
             self.ui.textEdit.setText("Not valid")
+
+    def Dot_num(self):
+        pass
+
+    def Negpos_num(self):
+        pass
 
 
 if __name__ == "__main__":
