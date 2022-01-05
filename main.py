@@ -26,11 +26,10 @@ class Calculator (QMainWindow):
         self.ui.btn_cel.clicked.connect(self.Clear_num)
         """ self.ui.btn_negPos.clicked.connect(self.Negpos_num) """
         self.ui.btn_sin.clicked.connect(self.Sin_num)
-        """self.ui.btn_cos.clicked.connect(self.Equal_num)
-        self.ui.btn_cot.clicked.connect(self.Equal_num)
-        self.ui.btn_tan.clicked.connect(self.Equal_num)
-        self.ui.btn_sqrt.clicked.connect(self.Equal_num)
-        self.ui.btn_log.clicked.connect(self.Equal_num) """
+        self.ui.btn_cos.clicked.connect(self.Cos_num)
+        self.ui.btn_cot.clicked.connect(self.Cot_num)
+        self.ui.btn_tan.clicked.connect(self.Tan_num)
+        self.ui.btn_log.clicked.connect(self.Log_num)
 
     def Persent_Num(self):
         self.cal = 8
