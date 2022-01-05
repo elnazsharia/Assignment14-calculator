@@ -33,6 +33,8 @@ class Calculator (QMainWindow):
 
     def Persent_Num(self):
         self.cal = 8
+        self.first = float(self.ui.text_box.text())
+        self.ui.text_box.setText("")
 
     def Sum_num(self):
         try:
@@ -162,8 +164,10 @@ class Calculator (QMainWindow):
             self.first = self.ui.text_box.setText(
                 str(sqrt(self.first)))
         if self.cal == 8:
+            self.second = float(self.ui.text_box.text())
+            self.ui.text_box.setText("")
             self.first = self.ui.text_box.setText(
-                str(self.first * 100))
+                str((self.first / self.second)*100))
         if self.cal == 9:
             self.first = self.ui.text_box.setText(
                 str(sin(self.first)))
