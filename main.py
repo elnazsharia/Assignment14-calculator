@@ -15,13 +15,10 @@ class Calculator (QMainWindow):
         self.ui.btn_persent.clicked.connect(self.persent)
 
     def persent(self):
-        """ print('hello qt') """
-        self.ui.textEdit.setText("hello qt")
+        self.ui.textEdit.setText("")
 
 
-app = QApplication()
-
-main_window = Calculator()
-
-
-app. exec()
+if __name__ == "__main__":
+    app = QApplication()
+    main_window = Calculator()
+    app. exec()
